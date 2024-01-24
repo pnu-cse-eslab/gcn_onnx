@@ -1,0 +1,166 @@
+[09.13.23|17:52:26] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|17:52:26] Training epoch: 0
+[09.13.23|17:52:26] 	Iter 0 Done. | loss: 3.3615 | lr: 0.100000
+[09.13.23|17:52:27] 	mean_loss: 3.3793724360673325
+[09.13.23|17:52:27] Time consumption:
+[09.13.23|17:52:27] Done.
+[09.13.23|17:52:27] Eval epoch: 0
+[09.13.23|17:52:27] The model has been saved as tttt/23_14.285714285714285_epoch1_model.pt.
+[09.13.23|17:52:27] Done.
+[09.13.23|17:52:27] Training epoch: 1
+[09.13.23|17:52:28] 	mean_loss: 3.346744584000629
+[09.13.23|17:52:28] Time consumption:
+[09.13.23|17:52:28] Done.
+[09.13.23|17:52:28] Eval epoch: 1
+[09.13.23|17:52:28] The model has been saved as tttt/48_29.81366459627329_epoch2_model.pt.
+[09.13.23|17:52:28] Done.
+[09.13.23|17:52:28] Training epoch: 2
+[09.13.23|17:52:28] 	Iter 100 Done. | loss: 3.3447 | lr: 0.100000
+[09.13.23|17:52:29] 	mean_loss: 3.301580657129702
+[09.13.23|17:52:29] Time consumption:
+[09.13.23|17:52:29] Done.
+[09.13.23|17:52:29] Eval epoch: 2
+[09.13.23|17:52:29] Not update.
+[09.13.23|17:52:29] Training epoch: 3
+[09.13.23|17:52:29] 	mean_loss: 3.2743226341579272
+[09.13.23|17:52:29] Time consumption:
+[09.13.23|17:52:29] Done.
+[09.13.23|17:52:29] Eval epoch: 3
+[09.13.23|17:52:30] The model has been saved as tttt/57_35.40372670807454_epoch4_model.pt.
+[09.13.23|17:52:30] Done.
+[09.13.23|17:52:30] Training epoch: 4
+[09.13.23|17:52:30] 	Iter 200 Done. | loss: 3.3062 | lr: 0.100000
+[09.13.23|17:52:51] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|17:52:51] Training epoch: 0
+[09.13.23|17:53:04] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|17:53:04] Training epoch: 0
+[09.13.23|17:53:04] 	Iter 0 Done. | loss: 3.3859 | lr: 0.100000
+[09.13.23|17:53:05] 	mean_loss: 3.3751034166501914
+[09.13.23|17:53:05] Time consumption:
+[09.13.23|17:53:05] Done.
+[09.13.23|17:53:05] Eval epoch: 0
+[09.13.23|17:53:05] The model has been saved as tttt/23_14.285714285714285_epoch1_model.pt.
+[09.13.23|17:53:05] Done.
+[09.13.23|17:53:05] Training epoch: 1
+[09.13.23|17:56:12] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|17:56:12] Training epoch: 0
+[09.13.23|17:56:43] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|17:56:43] Training epoch: 0
+[09.13.23|17:57:24] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|17:57:24] Training epoch: 0
+[09.13.23|17:57:24] 	Iter 0 Done. | loss: 3.4014 | lr: 0.100000
+[09.13.23|17:57:25] 	mean_loss: 3.36952004743659
+[09.13.23|17:57:25] Time consumption:
+[09.13.23|17:57:25] Done.
+[09.13.23|17:57:25] Eval epoch: 0
+[09.13.23|17:57:25] The model has been saved as tttt/41_25.465838509316768_epoch1_model.pt.
+[09.13.23|17:57:25] Done.
+[09.13.23|17:57:25] Training epoch: 1
+[09.13.23|17:57:48] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|17:57:48] Training epoch: 0
+[09.13.23|17:57:48] 	Iter 0 Done. | loss: 3.3929 | lr: 0.100000
+[09.13.23|17:58:33] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|17:58:34] Training epoch: 0
+[09.13.23|17:58:51] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|17:58:51] Training epoch: 0
+[09.13.23|17:58:51] 	Iter 0 Done. | loss: 3.3902 | lr: 0.100000
+[09.13.23|17:58:52] 	mean_loss: 3.3753189470456992
+[09.13.23|17:58:52] Time consumption:
+[09.13.23|17:58:52] Done.
+[09.13.23|17:58:52] Eval epoch: 0
+[09.13.23|18:01:03] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|18:01:03] Training epoch: 0
+[09.13.23|18:01:03] 	Iter 0 Done. | loss: 3.3868 | lr: 0.100000
+[09.13.23|18:01:04] 	mean_loss: 3.381644694701485
+[09.13.23|18:01:04] Time consumption:
+[09.13.23|18:01:04] Done.
+[09.13.23|18:01:04] Eval epoch: 0
+[09.13.23|18:01:04] The model has been saved as tttt/23_14.285714285714285_epoch1_model.pt.
+[09.13.23|18:01:04] Done.
+[09.13.23|18:01:04] Training epoch: 1
+[09.13.23|18:01:38] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|18:01:38] Training epoch: 0
+[09.13.23|18:01:38] 	Iter 0 Done. | loss: 3.3880 | lr: 0.100000
+[09.13.23|18:01:39] 	mean_loss: 3.3738414515619692
+[09.13.23|18:01:39] Time consumption:
+[09.13.23|18:01:39] Done.
+[09.13.23|18:01:39] Eval epoch: 0
+[09.13.23|18:01:57] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|18:01:57] Training epoch: 0
+[09.13.23|18:01:57] 	Iter 0 Done. | loss: 3.3752 | lr: 0.100000
+[09.13.23|18:01:58] 	mean_loss: 3.371764307436736
+[09.13.23|18:01:58] Time consumption:
+[09.13.23|18:01:58] Done.
+[09.13.23|18:01:58] Eval epoch: 0
+[09.13.23|18:01:58] The model has been saved as tttt/40_24.84472049689441_epoch1_model.pt.
+[09.13.23|18:01:58] Done.
+[09.13.23|18:01:58] Training epoch: 1
+[09.13.23|18:04:42] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|18:04:42] Training epoch: 0
+[09.13.23|18:04:42] 	Iter 0 Done. | loss: 3.4177 | lr: 0.100000
+[09.13.23|18:04:43] 	mean_loss: 3.388828650764797
+[09.13.23|18:04:43] Time consumption:
+[09.13.23|18:04:43] Done.
+[09.13.23|18:04:43] Eval epoch: 0
+[09.13.23|18:04:43] The model has been saved as tttt/38_23.60248447204969_epoch1_model.pt.
+[09.13.23|18:04:43] Done.
+[09.13.23|18:04:43] Training epoch: 1
+[09.13.23|18:04:44] 	mean_loss: 3.3646038045053897
+[09.13.23|18:04:44] Time consumption:
+[09.13.23|18:04:44] Done.
+[09.13.23|18:04:44] Eval epoch: 1
+[09.13.23|18:04:44] The model has been saved as tttt/42_26.08695652173913_epoch2_model.pt.
+[09.13.23|18:04:44] Done.
+[09.13.23|18:04:44] Training epoch: 2
+[09.13.23|18:10:54] Parameters:
+{'work_dir': 'tttt', 'config': 'config/mtgea/dguha/kd_train.yaml', 'chunk': 1, 'phase': 'train', 'save_result': False, 'start_epoch': 0, 'num_epoch': 1000, 'use_gpu': True, 'device': [1], 'log_interval': 100, 'save_interval': 10, 'eval_interval': 5, 'save_log': True, 'print_log': True, 'pavi_log': False, 'feeder': 'feeder.feeder.Feeder', 'num_worker': 4, 'train_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl', 'debug': False}, 'test_feeder_args': {'data_path': '/home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy', 'label_path': '/home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl'}, 'kd_model': '/home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt', 'skeleton_train_feeder_args': {}, 'skeleton_test_feeder_args': {}, 'batch_size': 13, 'test_batch_size': 13, 'debug': False, 'model': 'net.st_gcn_alone.alone', 'model_args': {'base_model': 'net.st_gcn.Model', 'in_channels': 3, 'num_class': 32, 'output_class': 7, 'dropout': 0.5, 'edge_importance_weighting': True, 'graph_args': {'layout': 'ntu-rgb+d', 'strategy': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'show_topk': [1, 5], 'base_lr': 0.1, 'step': [10, 50], 'optimizer': 'SGD', 'nesterov': True, 'weight_decay': 0.0001}
+
+[09.13.23|18:10:54] Training epoch: 0
+[09.13.23|18:10:54] 	Iter 0 Done. | loss: 3.3943 | lr: 0.100000
+[09.13.23|18:10:55] 	mean_loss: 3.3824144290841143
+[09.13.23|18:10:55] Time consumption:
+[09.13.23|18:10:55] Done.
+[09.13.23|18:10:55] Eval epoch: 0
+[09.13.23|18:10:55] The model has been saved as tttt/61_37.88819875776397_epoch1_model.pt.
+[09.13.23|18:10:55] Done.
+[09.13.23|18:10:55] Training epoch: 1
+[09.13.23|18:10:56] 	mean_loss: 3.338125140770622
+[09.13.23|18:10:56] Time consumption:
+[09.13.23|18:10:56] Done.
+[09.13.23|18:10:56] Eval epoch: 1
+[09.13.23|18:10:56] The model has been saved as tttt/66_40.993788819875775_epoch2_model.pt.
+[09.13.23|18:10:56] Done.
+[09.13.23|18:10:56] Training epoch: 2
+[09.13.23|18:10:56] 	Iter 100 Done. | loss: 3.3321 | lr: 0.100000
+[09.13.23|18:10:57] 	mean_loss: 3.283079779666403
+[09.13.23|18:10:57] Time consumption:
+[09.13.23|18:10:57] Done.
+[09.13.23|18:10:57] Eval epoch: 2
+[09.13.23|18:10:57] Not update.
+[09.13.23|18:10:57] Training epoch: 3

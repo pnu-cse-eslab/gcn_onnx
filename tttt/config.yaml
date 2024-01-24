@@ -1,0 +1,55 @@
+# command line: main.py recognition -c config/mtgea/dguha/kd_train.yaml --work_dir tttt
+
+base_lr: 0.1
+batch_size: 13
+chunk: 1
+config: config/mtgea/dguha/kd_train.yaml
+debug: false
+device:
+- 1
+eval_interval: 5
+feeder: feeder.feeder.Feeder
+ignore_weights: []
+kd_model: /home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt
+log_interval: 100
+model: net.st_gcn_alone.alone
+model_args:
+    base_model: net.st_gcn.Model
+    dropout: 0.5
+    edge_importance_weighting: true
+    graph_args:
+        layout: ntu-rgb+d
+        strategy: spatial
+    in_channels: 3
+    num_class: 32
+    output_class: 7
+nesterov: true
+num_epoch: 1000
+num_worker: 4
+optimizer: SGD
+pavi_log: false
+phase: train
+print_log: true
+save_interval: 10
+save_log: true
+save_result: false
+show_topk:
+- 1
+- 5
+skeleton_test_feeder_args: {}
+skeleton_train_feeder_args: {}
+start_epoch: 0
+step:
+- 10
+- 50
+test_batch_size: 13
+test_feeder_args:
+    data_path: /home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy
+    label_path: /home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl
+train_feeder_args:
+    data_path: /home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy
+    label_path: /home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl
+use_gpu: true
+weight_decay: 0.0001
+weights: null
+work_dir: tttt

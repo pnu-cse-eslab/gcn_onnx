@@ -1,0 +1,42 @@
+
+work_dir: ./work_dir/recognition/ST-GCN/alone/channel60/
+
+
+# feeder
+feeder: feeder.feeder.Feeder
+train_feeder_args:
+  data_path: /home/eslabkh/kh/dguha_dataset/dguha_all_train.npy
+  label_path: /home/eslabkh/kh/dguha_dataset/dguha_all_train_label.pkl
+
+
+test_feeder_args:
+  data_path: /home/eslabkh/kh/dguha_dataset/dguha_all_test.npy
+  label_path: /home/eslabkh/kh/dguha_dataset/dguha_all_test_label.pkl
+
+
+# model
+# model
+model: net.st_gcn_alone.alone
+model_args:
+  base_model: net.st_gcn.Model
+  in_channels: 3
+  num_class: 32
+  output_class: 7
+  dropout: 0.5
+  edge_importance_weighting: True
+  graph_args:
+    layout: 'ntu-rgb+d'
+    strategy: 'spatial'
+
+
+#optim
+weight_decay: 0.0001
+base_lr: 0.1
+step: [10, 50]
+
+# training
+device: [1]
+batch_size: 13
+test_batch_size: 13
+num_epoch: 1000
+

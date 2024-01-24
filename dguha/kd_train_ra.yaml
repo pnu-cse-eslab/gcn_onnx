@@ -1,0 +1,49 @@
+
+# feeder
+feeder: feeder.feeder.Feeder
+train_feeder_args:
+  data_path: /home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy
+  label_path: /home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl
+
+# skeleton_train_feeder_args 
+skeleton_train_feeder_args:
+  data_path: /home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_train.npy
+  label_path: /home/eslabkh/kh/dguha_dataset/dguha_train_label.pkl
+
+test_feeder_args:
+  data_path: /home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy
+  label_path: /home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl
+
+# skeleton_test_feeder_args 
+skeleton_test_feeder_args:
+  data_path: /home/eslabkh/kh/dguha_dataset/dguha_pcl_ahc_test.npy
+  label_path: /home/eslabkh/kh/dguha_dataset/dguha_test_label.pkl  
+
+kd_model: /home/eslabkh/kh/MTGEA-main/train/skeleton/ch32/10s_for_KD/160_99.37888198757764_epoch971_model.pt
+
+# model
+# model
+model: net.st_gcn_alone.alone
+model_args:
+  base_model: net.st_gcn_re.Model
+  in_channels: 3
+  num_class: 32
+  output_class: 7
+  dropout: 0.5
+  edge_importance_weighting: True
+  graph_args:
+    layout: 'ntu-rgb+d'
+    strategy: 'spatial'
+
+
+#optim
+weight_decay: 0.0001
+base_lr: 0.1
+step: [10, 50]
+
+# training
+device: [1]
+batch_size: 13
+test_batch_size: 13
+num_epoch: 300
+
